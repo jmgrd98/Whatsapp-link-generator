@@ -27,11 +27,11 @@
         <p>Insira o número que você quer e clique no botão abaixo para gerar o seu link de <span>Whatsapp!</span></p>
     </section>
 
-    <section class="form">
-        <input type="text" name="qr-code" id="input" placeholder="+55 85 9X-XXXX">
-        <textarea id="mensagem" placeholder="Insira sua mensagem aqui!"></textarea>
-        <button type="submit">Gerar meu link de ZAP ZAP</button>
-    </section>
+    <form class="form">
+        <input type="number" name="qr-code" id="number" placeholder="+55 85 9X-XXXX" required>
+        <input type="text" id="msg" placeholder="Insira sua mensagem aqui!"></textarea>
+        <button type="submit" onclick="generate()">Gerar meu link de ZAP ZAP</button>
+    </form>
     </aside>
 
 
