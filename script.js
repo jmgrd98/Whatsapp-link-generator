@@ -1,14 +1,16 @@
 // Declarando as variáveis
 
-const number = document.getElementById("number").value;
-const msg = encodeURIComponent(document.getElementById("msg").value);
-const generateBtn = document.getElementByTagName("button");
 
 
 
 function generate() {
-    let link = "https://wa.me/"+number+"/?text="+msg;
+
+    let number = document.getElementById("number").value;
+    let msg = encodeURIComponent(document.getElementById("msg").value);
+    let link = `https://wa.me/${number}/?text=${msg}`;
     let result = document.createElement("input");
     result.value = link;
+    result.className = "whatsapp"
     document.querySelector("form").appendChild(result);
+    console.log(number.value, msg.value)
 }
