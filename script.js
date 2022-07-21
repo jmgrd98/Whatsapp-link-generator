@@ -1,7 +1,4 @@
-// Declarando as variáveis
-
-
-
+let generateBtn = document.getElementById('generateBtn')
 
 function generate() {
 
@@ -14,3 +11,7 @@ function generate() {
     document.querySelector("form").appendChild(result);
     console.log(number.value, msg.value)
 }
+
+generateBtn.addEventListener("click", e => {
+    e.preventDefault();
+})
