@@ -25,7 +25,7 @@ body{
 main{
     background: linear-gradient(90deg, #1163c6, #5fb8e9);
     width: 70vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@ main{
 
 aside{
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -143,19 +143,13 @@ form{
     gap: 20px;
 }
 
-#qr-code{
+#result{
     align-self: center;
-    max-width: 75%;
-}
-
-.qr-code{
-    display: none;
-    align-self: center;
-    text-align: center;
-}
-
-.active{
-    display: flex;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+    border: 3px solid #1163c6;
+    visibility: hidden;
 }
 
 @media only screen and (max-width: 600px){
