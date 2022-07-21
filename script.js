@@ -11,7 +11,3 @@ function generate() {
     document.querySelector("form").appendChild(result);
     console.log(number.value, msg.value)
 }
-
-generateBtn.addEventListener("click", e => {
-    e.preventDefault();
-})
