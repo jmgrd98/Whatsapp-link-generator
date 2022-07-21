@@ -152,6 +152,10 @@ form{
     visibility: hidden;
 }
 
+#copyBtn{
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 600px){
     body{
         display: flex;
