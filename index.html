@@ -27,13 +27,13 @@
         <p>Insira o número que você quer e clique no botão abaixo para gerar o seu link de <span>Whatsapp!</span></p>
     </section>
 
-    <form name="form" action="#" onsubmit="generate()" method="get">
+    <form name="form" action="#" method="get">
 
         
         <input type="number" id="number" placeholder="+55 (DDD) 0 0000-0000" required>
         <textarea type="text" id="msg" placeholder="Insira sua mensagem aqui!"></textarea>
         
-        <button type="submit" id="generateBtn">Gerar meu link agora</button>
+        <button type="submit" id="generateBtn" onclick="generate()">Gerar meu link agora</button>
 
         <p type="text" id="result"></p>
         <button type="button" id="copyBtn" onclick="copyText()">Copiar</button>
