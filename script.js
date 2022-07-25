@@ -9,7 +9,8 @@ function generate() {
     let generateBtn = document.getElementById('generateBtn')
     result.style.visibility = 'visible';
     result.innerHTML = link;
-    generateBtn.innerText = "Prontinho! ;)"
+    generateBtn.innerText = "Prontinho! ;)";
+    onclick.pre
     //copyBtn.style.visibility = 'visible';
     //document.querySelector("form").appendChild(result);
 }
